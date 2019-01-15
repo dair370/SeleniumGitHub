@@ -12,7 +12,7 @@ driver.maximize_window()
 # driver3.maximize_window()
 
 # chrome
-driver.get("http://autofms.devtest.tk/")
+driver.get("http://autofms.devtest.tk1/")
 print(driver.current_url)
 print(driver.title)
 driver.close()
