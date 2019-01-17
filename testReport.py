@@ -1,9 +1,7 @@
-# coding:utf-8
 from selenium import webdriver
 import unittest
 import time
 import HTMLTestRunner
-
 
 class OpenTest(unittest.TestCase):
     # 初始化測試環境
