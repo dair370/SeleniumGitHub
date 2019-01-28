@@ -23,6 +23,7 @@ class OpenTest(unittest.TestCase):
         time.sleep(1)
 
         name = driver.find_element_by_css_selector(".app-user-info>.fs-description:nth-child(1)>dl>dd:nth-child(4)").text
+        print(name)
         self.assertEqual(name, "系統管理者", "比對名字不正確")
 
 
