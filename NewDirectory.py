@@ -5,7 +5,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-
 class NewDirectory(unittest.TestCase):
 
     @classmethod
@@ -45,7 +44,6 @@ class NewDirectory(unittest.TestCase):
         print(a1.text)
         a1.dismiss()
         time.sleep(1)
-
 
     @classmethod
     def tearDownClass(cls):

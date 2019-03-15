@@ -4,7 +4,7 @@ from easysignin import EasySign
 from NewDirectory import NewDirectory
 # get all tests from SearchProductTest and HomePageTest class
 fastname = unittest.TestLoader().loadTestsFromTestCase(OpenTest)
-easysignin  = unittest.TestLoader().loadTestsFromTestCase(EasySign)
+easysignin = unittest.TestLoader().loadTestsFromTestCase(EasySign)
 NewDirectory = unittest.TestLoader().loadTestsFromTestCase(NewDirectory)
 # create a test suite combining search_test and home_page_test
 smoke_tests = unittest.TestSuite([fastname, easysignin, NewDirectory])
