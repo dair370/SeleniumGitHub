@@ -35,6 +35,7 @@ class NewDirectory1(unittest.TestCase):
         editbox = driver.find_element_by_xpath("/html/body")
         editbox.send_keys("Hello")
         driver.switch_to.parent_frame()
+        time.sleep(1)
         driver.find_element_by_css_selector("button[data-role=form-submit]").click()
         time.sleep(1)
         driver.find_element_by_xpath('//*[@id="1236"]/div[1]/span/ul/li[2]/span[2]').click()
