@@ -22,9 +22,9 @@ class EasySign(unittest.TestCase):
         driver.find_element_by_name('password').send_keys('111111')
         WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.CLASS_NAME, 'btn-primary')))
         driver.find_element_by_class_name('btn-primary').click()
+        time.sleep(1)
         Banner = driver.find_element_by_xpath('//*[@id="page-banner"]').text
         print(Banner)
-        time.sleep(1)
         self.assertEqual(Banner, "autofms Banner", "Banner不正確")
 
     def tearDown(self):

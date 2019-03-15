@@ -43,7 +43,7 @@ class NewDirectory1(unittest.TestCase):
         time.sleep(1)
         print(a1.text)
         a1.dismiss()
-        time.sleep(1)
+
 
     @classmethod
     def tearDownClass(cls):
